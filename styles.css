@@ -281,3 +281,7 @@ form .btn-2
 }
 /* ------css for small screen------- */
 
+@media screen and (max-width: 600px)
+{
+  
+}
