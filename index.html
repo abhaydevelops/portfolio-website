@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./script.js">
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap"
       rel="stylesheet"
@@ -177,21 +178,5 @@
     <div class="copyright">
       <p>Copyright &#169; Abhay Pratap Singh </p>
     </div>
-
-
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
   </body>
 </html>
