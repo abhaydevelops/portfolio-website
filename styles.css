@@ -4,7 +4,6 @@
 }
 body
 {
-  margin: 0 80px;
   background-color: #e0f4ff;
 }
 nav {
@@ -63,6 +62,8 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* ---main----- */
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +92,7 @@ a {
 
 .about {
   padding: 40px 20px;
+  margin: 0 80px;
 }
 .row {
   display: flex;
@@ -135,6 +137,11 @@ a {
   list-style: none;
   margin: 15px 0;
 }
+.tab-contents ul.list
+{
+  padding: 0;
+  height: 120px;
+}
 .tab-contents ul li span{
 color: #39a7ff;
 font-size: 16px;
@@ -151,6 +158,7 @@ font-size: 16px;
 #projects
 {
   padding: 40px 0;
+  margin: 0 80px;
 }
 .work-list
 {
@@ -187,14 +195,16 @@ transition: transform(0.5s);
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  transition: height(0.5s);
+  
 }
 .layer h3{
   font-size: 20px;
   font-weight: 500;
 }
+.layer p{
+  padding:0 20px;
+}
 .layer a{
-  margin-top: 20px;
   text-decoration: none;
   line-height: 60px; 
   background-color: white;
@@ -202,12 +212,13 @@ transition: transform(0.5s);
   width: 60px;
   border-radius: 50%;
 }
-.work:hover img{
+.work:hover
+{
   transform: scale(1.1);
 }
 .work:hover .layer{
   height: 100%;
-  transform: scale(1.1);
+  transition: 500ms;
 }
 .social-icons a
 {
@@ -217,6 +228,11 @@ transition: transform(0.5s);
 }
 
 /* -------contact------- */
+#contact
+{
+  margin-bottom: 50px;
+  margin: 0 80px;
+}
 .contact-left
 {
   flex-basis: 35%;
@@ -232,7 +248,6 @@ form input, form textarea
 {
 width: 100%;
 border: 0;
-outline: none;
 background: #87c4ff;
 padding: 15px;
 margin: 15px 0;
@@ -240,3 +255,22 @@ color: black;
 font-size: 18px;
 border-radius: 6px;
 }
+form .btn-2
+{
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+/* ----copyright---- */
+
+.copyright
+{
+  width: 100%;
+  background-color: #87C4FF;
+  text-align: center;
+  margin-top: 40px;
+}
+  
+/* ------css for small screen------- */
+
