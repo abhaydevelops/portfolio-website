@@ -2,6 +2,9 @@
 * {
   font-family: Poppins;
 }
+html{
+  scroll-behavior: smooth;
+}
 body
 {
   background-color: #e0f4ff;
@@ -90,7 +93,7 @@ a {
 
 /* about */
 
-.about {
+#about {
   padding: 40px 20px;
   margin: 0 80px;
 }
@@ -272,5 +275,9 @@ form .btn-2
   margin-top: 40px;
 }
   
+#msg{
+  color: rgb(3, 64, 44);
+  display: block;
+}
 /* ------css for small screen------- */
 
