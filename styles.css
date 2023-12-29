@@ -8,7 +8,16 @@ html{
 body
 {
   background-color: #e0f4ff;
+  margin: 0;
 }
+.logo
+{
+  height: 70px;
+}
+.logo img{
+  height: 70px;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -30,7 +39,7 @@ nav ul {
   margin: 20px 10px;
 }
 nav ul li {
-  display: flex;
+  display: block;
   font-weight: 700;
   justify-content: space-around;
   margin: 0 20px;
@@ -70,8 +79,10 @@ a {
 .main {
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
-  justify-content: space-around;
+  height: 100vh;
+  margin: 0 60px;
+  background: url(./images/background-big.png);
+  background-position: center;
   align-items: center;
 }
 .welcome-text p {
@@ -83,12 +94,6 @@ a {
   color: black;
   font-size: 20px;
   font-weight: 400;
-}
-
-.profile-image img {
-  height: 80vh;
-  width: auto;
-  border-radius: 50%;
 }
 
 /* about */
@@ -281,7 +286,24 @@ form .btn-2
 }
 /* ------css for small screen------- */
 
-@media screen and (max-width: 600px)
+/* @media screen and (max-width: 600px)
 {
-  
+  .logo{
+    display: flex;
+    font-size:large;
+    align-items: center;
+  }
+  nav ul
+  {
+    display: block;
+    height: 100%;
+    background-color: #39a7ff;
+  }
+  .welcome-text p
+{
+  font-size: 10px;
 }
+.welcome-text p span
+{
+  font-size: 10px;
+}} */
