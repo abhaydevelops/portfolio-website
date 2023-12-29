@@ -81,7 +81,7 @@ a {
   flex-wrap: wrap;
   height: 100vh;
   margin: 0 60px;
-  background: url(./images/background-big.png);
+  background: url(./images/back.png);
   background-position: center;
   align-items: center;
 }
