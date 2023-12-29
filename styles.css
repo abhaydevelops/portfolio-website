@@ -8,7 +8,7 @@ html{
 body
 {
   background-color: #e0f4ff;
-  margin: 0;
+  /* margin: 0; */
 }
 .logo
 {
@@ -284,26 +284,84 @@ form .btn-2
   color: rgb(3, 64, 44);
   display: block;
 }
+nav .menu
+{
+  display: none;
+}
 /* ------css for small screen------- */
 
-/* @media screen and (max-width: 600px)
+@media only screen and (max-width: 600px)
 {
-  .logo{
-    display: flex;
-    font-size:large;
-    align-items: center;
+  *{
+    padding: 0;
   }
-  nav ul
-  {
+  nav{
+    height: 40px;
+    width: 100%;
+  }
+  nav .logo {
+    height: 40px;
+  }
+  nav .logo img{
+    height: 40px;
+  }
+  nav ul{
     display: block;
-    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: -210px;
+    width: 200px;
     background-color: #39a7ff;
+    padding: 0;
+    z-index: 2;
+    transition: right 1000ms;
   }
-  .welcome-text p
+  nav ul li{
+    margin: 25px;
+  }
+  .main{
+    display: flex;
+    background: url(./images/back\ small.png);
+    background-position: center;
+    height: 100vh;
+    flex-basis: 100%;
+    margin: 0;
+    align-items: end;
+  }
+  .welcome-text p{
+    font-size: 35px;
+
+  }
+  .welcome-text p span{
+    font-size: 25px;
+  }
+  nav .menu{
+    display: block;
+    margin-bottom: 20px;
+  }
+  nav ul .menu{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  #about{
+    margin: 0;
+   padding: 0;
+  }
+  #about-col-1 {
+    display: none;
+  }
+  #about-col-2{
+    display: inline;
+  }
+  #projects
 {
-  font-size: 10px;
+  padding: 40px 0;
+  margin: 0 0px;
 }
-.welcome-text p span
+#contact
 {
-  font-size: 10px;
-}} */
+  margin-bottom: 50px;
+  margin: 0 0px;
+}
+}
